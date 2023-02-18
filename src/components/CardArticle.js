@@ -8,7 +8,7 @@ import { truncateString } from "@/utils/truncateString";
 const CardArticle = ({ image, title, body, id }) => {
   return (
     <div className="md:flex items-center cursor-pointer px-5 py-5 mb-[50px] gap-[50px] hover:shadow-md transition-all ease-in-out rounded-lg">
-      {image === true && (
+      {image === "true" && (
         <div className="">
           <Image src={ImageArticle} alt="sub article" className="object-contain w-[900px]" />
         </div>

@@ -20,7 +20,7 @@ function HeroContent({ data }) {
         <div className="flex justify-center">
           <div className="lg:w-[760px] ">
             <div>
-              <Image src={HeroContentImage} alt="top article" priority={true} as />
+              <Image src={HeroContentImage} alt="top article" priority={true} />
               <h1 className="font-bold text-[28px]">{data[0].title}</h1>
               <div className="flex items-center justify-between text-[#9e9e9e]">
                 <div className="flex items-center gap-6">
@@ -79,8 +79,8 @@ function HeroContent({ data }) {
       {/* More article */}
       <div>
         <CategoryText title={"ARTICLE YOU MIGHT LIKE..."} fontSize={24} />
-        <CardArticle title={data[2].title} body={data[2].body} id={data[2].id} image={true} />
-        <CardArticle title={data[3].title} body={data[3].body} id={data[3].id} image={true} />
+        <CardArticle title={data[2].title} body={data[2].body} id={data[2].id} image={"true"} />
+        <CardArticle title={data[3].title} body={data[3].body} id={data[3].id} image={"true"} />
         <Link className="inline-block mb-10 px-[10px] py-[10px] bg-primary rounded-md text-white" href={"/blogs"}>
           Show More Articles
         </Link>
